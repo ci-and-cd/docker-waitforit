@@ -9,7 +9,7 @@ Dockerfile [ci-and-cd/waitforit on Github](https://github.com/ci-and-cd/waitfori
 
 ```dockerfile
 
-FROM alpine:3.7
+FROM alpine:3.8
 COPY --from=cirepo/waitforit:2.2.0-archvie /data/root /
 
 ```
