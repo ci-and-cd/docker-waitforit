@@ -10,7 +10,7 @@ services:
       - IMAGE_ARG_FILESERVER=${IMAGE_ARG_FILESERVER}
       #- IMAGE_ARG_FILESERVER=${IMAGE_ARG_FILESERVER:-http://fileserver.infra.top}
       - IMAGE_ARG_WAITFORIT_VERSION=${IMAGE_ARG_WAITFORIT_VERSION:-2.2.0}
-    image: ${IMAGE_PREFIX:-cirepo}/${IMAGE_NAME:-waitforit}:${IMAGE_TAG:-2.2.0}
+    image: ${IMAGE_PREFIX:-cirepo/}${IMAGE_NAME:-waitforit}:${IMAGE_TAG:-2.2.0}
   #docker-compose build dumper
   dumper:
     build:
@@ -22,4 +22,4 @@ services:
     build:
       context: .
       dockerfile: Dockerfile_archive
-    image: ${IMAGE_PREFIX:-cirepo}/${IMAGE_NAME:-waitforit}:${IMAGE_TAG:-2.2.0}-archive
+    image: ${IMAGE_PREFIX:-cirepo/}${IMAGE_NAME:-waitforit}:${IMAGE_TAG:-2.2.0}-archive
