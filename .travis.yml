@@ -12,10 +12,10 @@ branches:
 dist: trusty
 env:
   global:
-  - IMAGE_TAG_LATEST=2.2.0
+  - IMAGE_TAG_LATEST=2.4.1
   matrix:
   - IMAGE_ARG_WAITFORIT_VERSION=2.1.0
-  - IMAGE_ARG_WAITFORIT_VERSION=2.2.0
+  - IMAGE_ARG_WAITFORIT_VERSION=2.4.1
 
 group: edge
 #install: true
